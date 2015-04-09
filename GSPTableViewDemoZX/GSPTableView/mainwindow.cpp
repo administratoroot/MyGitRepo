@@ -158,18 +158,7 @@ void MainWindow::doDebug()
     iTable.append(iRecord);
 }
 
-//设置编辑方式
-GEditStyle MyDelegate::editStyle(GSPCustomRowNode *rowNode, int dataCol, bool &readOnly) const
-{
-    if (3 == dataCol)
-    {
-        return esDropDown;
-    }
-    else
-    {
-        return GSPDefaultItemDelegate::editStyle(rowNode, dataCol, readOnly);
-    }
-}
+
 
 //queryCell改变值
 void TestEventHandle::onQueryCellValue(GSPCustomRowNode *rowNode, int col, GSPField field, GSPRecord record, GVariant &value, bool &handled)
@@ -212,42 +201,8 @@ void TestEventHandle::onQueryCellAttribute(GSPCustomRowNode *rowNode, int col, G
     }
 }
 
-//插入后触发引擎的事件
-void TestAfterInsertRecord::afterInsertRecord(GSPRecord &record)
-{
-    G_UNUSED(record);
-    //QMessageBox::information(NULL, "Test", "Insert Ok", QMessageBox::Ok);
-}
-
-GString MyFunction::name()
-{
-    return "aaa";
-}
-
-GEPDataType MyFunction::resultDataType()
-{
-    return edtInteger;
-}
-
-GEPDataMatchType MyFunction::matchParam(long paramCount, IGEPNodeList *params)
-{
-    G_UNUSED(paramCount);
-    G_UNUSED(params);
-    return dmtExact;
-}
-
-void MyFunction::execute(long paramCount, IGEPNodeList *params, IGEPData *result)
-{
-    G_UNUSED(paramCount);
-    G_UNUSED(params);
-    int value = result->asInteger();
-    result->setAsInteger(value + 1);
-}
 
 
 
-void TestParseConstEvent::onQueryConstValue(const GString &constCode, GString &value, void *info)
-{
-    int k = 1;
-    k++;
-}
+
+

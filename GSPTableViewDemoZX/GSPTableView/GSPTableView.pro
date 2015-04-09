@@ -19,9 +19,17 @@ include($(GLDRS)/Glodon/shared/VLD.pri)
 include($(GLDRS)/Glodon/shared/GLDXLS.pri)
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    mydelegate.cpp \
+    testafterinsertrecord.cpp \
+    myfunction.cpp \
+    testparseconstevent.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    mydelegate.h \
+    testafterinsertrecord.h \
+    myfunction.h \
+    testparseconstevent.h
 
 FORMS    += mainwindow.ui
 
