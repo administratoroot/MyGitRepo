@@ -23,13 +23,15 @@ SOURCES += main.cpp\
     mydelegate.cpp \
     testafterinsertrecord.cpp \
     myfunction.cpp \
-    testparseconstevent.cpp
+    testparseconstevent.cpp \
+    testeventhandle.cpp
 
 HEADERS  += mainwindow.h \
     mydelegate.h \
     testafterinsertrecord.h \
     myfunction.h \
-    testparseconstevent.h
+    testparseconstevent.h \
+    testeventhandle.h
 
 FORMS    += mainwindow.ui
 

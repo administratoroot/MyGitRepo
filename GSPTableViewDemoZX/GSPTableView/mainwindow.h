@@ -9,7 +9,7 @@
 #include "myfunction.h"
 #include "testafterinsertrecord.h"
 #include "testparseconstevent.h"
-
+#include "testeventhandle.h"
 namespace Ui {
 class MainWindow;
 }
@@ -45,9 +45,4 @@ private:
     TestAfterInsertRecord *m_afterInsertRecord;
     GSPComboBox *m_comboBox;
 };
-
-
-
-
-
 #endif // MAINWINDOW_H
