@@ -1,20 +1,34 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "baidu20150419", "baidu20150419\baidu20150419.vcxproj", "{BC019FA0-E090-48BC-9331-AF0E8945C386}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lastNum20150913", "lastNum20150913\lastNum20150913.vcxproj", "{CC451138-BDAD-4338-961A-7A0109903422}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
 		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BC019FA0-E090-48BC-9331-AF0E8945C386}.Debug|Win32.ActiveCfg = Debug|Win32
 		{BC019FA0-E090-48BC-9331-AF0E8945C386}.Debug|Win32.Build.0 = Debug|Win32
+		{BC019FA0-E090-48BC-9331-AF0E8945C386}.Debug|x64.ActiveCfg = Debug|Win32
 		{BC019FA0-E090-48BC-9331-AF0E8945C386}.Release|Win32.ActiveCfg = Release|Win32
 		{BC019FA0-E090-48BC-9331-AF0E8945C386}.Release|Win32.Build.0 = Release|Win32
+		{BC019FA0-E090-48BC-9331-AF0E8945C386}.Release|x64.ActiveCfg = Release|Win32
+		{CC451138-BDAD-4338-961A-7A0109903422}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC451138-BDAD-4338-961A-7A0109903422}.Debug|Win32.Build.0 = Debug|Win32
+		{CC451138-BDAD-4338-961A-7A0109903422}.Debug|x64.ActiveCfg = Debug|x64
+		{CC451138-BDAD-4338-961A-7A0109903422}.Debug|x64.Build.0 = Debug|x64
+		{CC451138-BDAD-4338-961A-7A0109903422}.Release|Win32.ActiveCfg = Release|Win32
+		{CC451138-BDAD-4338-961A-7A0109903422}.Release|Win32.Build.0 = Release|Win32
+		{CC451138-BDAD-4338-961A-7A0109903422}.Release|x64.ActiveCfg = Release|x64
+		{CC451138-BDAD-4338-961A-7A0109903422}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
