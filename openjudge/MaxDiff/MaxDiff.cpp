@@ -20,7 +20,7 @@
 7
 8 4 9 5 3 7 1
 Êä³ö£º
-4
+5
 
 ¡¾TestCase4¡¿
 ÊäÈë£º
@@ -38,6 +38,7 @@ input error
 */
 /************************************************************************/
 #include <iostream>
+#include <algorithm>
 #include <assert.h>
 using namespace std;
 
@@ -45,7 +46,7 @@ int Array[1000];
 int getMaxDiff(int* a,int length)
 {
     assert(length > 1);
-	int minNum = a[0];
+    int minNum = min(a[0], a[1]);
     int Sub_MaxDiff = a[1] - a[0];
 	for (int i = 2; i < length; i++)
 	{
