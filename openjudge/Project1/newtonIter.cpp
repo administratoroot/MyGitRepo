@@ -1,5 +1,5 @@
 /************************************************************************/
-/* 
+/*
 用牛顿迭代法求解方程
 */
 /************************************************************************/
@@ -12,7 +12,7 @@ using namespace std;
 算法： 牛顿法
 使用： 输入一个实数，输出输入实数的立方根
 */
-double CubeRoot(const double stuff)
+double newtonCubeRoot(const double stuff)
 {
     const double  precision = 0.00001; /* 精度 */
     double nextX, currentX;
@@ -47,9 +47,42 @@ double CubeRoot(const double stuff)
 
     return nextX;
 }
+
+//************************************
+// Method:    牛顿迭代法求平方根
+// FullName:  newtonSqrt
+// Access:    public 
+// Returns:   double
+// Qualifier:
+// Parameter: const double x
+//************************************
+double newtonSqrt(const double x)
+{
+    if (x < 0)
+    {
+        return -1;
+    }
+    if (x == 0)
+    {
+        return 0;
+    }
+
+    double _avg = x;
+    double last_avg = DBL_MAX;
+    double precision = 1e-6;
+
+    while (abs(_avg - last_avg) > precision)
+    {
+        last_avg = _avg;
+        _avg = (_avg + x / _avg) / 2;
+    }
+    return _avg;
+}
+
 int main()
 {
-    cout << CubeRoot(8) << endl;
+    cout << newtonCubeRoot(7) << endl;
+    cout << newtonSqrt(2) << endl;
     system("pause");
     return 0;
 }
